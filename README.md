@@ -69,80 +69,6 @@ KeyXPulse/
         ├── storage.js        ← localStorage helpers
         └── aiLogic.js        ← AI suggestions, weak keys, WPM prediction
 ```
-
----
-
-## 🚀 Local Development
-
-```bash
-# 1. Navigate to project
-cd KeyXPulse
-
-# 2. Install dependencies
-npm install
-
-# 3. Start dev server
-npm run dev
-# → Opens at http://localhost:5173
-
-# 4. Build for production
-npm run build
-```
-
-> **Node.js requirement**: v18.x or v20.x (tested on 20.17.0)
-
----
-
-## ☁️ Deploying to Vercel
-
-### Method A – Vercel CLI (Fastest)
-
-```bash
-# Install Vercel CLI
-npm install -g vercel
-
-# Login
-vercel login
-
-# Deploy production
-vercel --prod
-```
-
-You'll get a URL like `https://keyxpulse.vercel.app` instantly.
-
----
-
-### Method B – GitHub + Vercel Dashboard (Recommended)
-
-1. **Push to GitHub**
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: KeyXPulse AI Typing Coach"
-   git remote add origin https://github.com/YOUR_USERNAME/keyxpulse.git
-   git push -u origin main
-   ```
-
-2. **Import on Vercel**
-   - Go to [vercel.com/new](https://vercel.com/new)
-   - Click **"Import Git Repository"** → select `keyxpulse`
-
-3. **Configure** (Vercel auto-detects Vite):
-   - Framework Preset: **Vite**
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-
-4. Click **Deploy** — done! 🎉  
-   Every `git push main` triggers an auto-redeploy.
-
----
-
-### Method C – Drag & Drop
-
-1. Run `npm run build` locally
-2. Go to [vercel.com/new](https://vercel.com/new)
-3. Drag your **`dist/`** folder into the browser
-
 ---
 
 ## 🎯 How to Use
@@ -177,4 +103,4 @@ MIT — free to use, modify, and share.
 
 ---
 
-*Made with 💜 · KeyXPulse © 2026*
+*Made with 💖 · KeyXPulse © 2026*
