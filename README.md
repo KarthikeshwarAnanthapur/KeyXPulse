@@ -1,46 +1,70 @@
-# KeyXPulse – AI Typing Coach ⌨️✨
+# ⌨️ KeyXPulse — AI Typing Coach ✨
 
-> A sleek, AI-powered typing coach built with React + Vite.  
-> Track your WPM, accuracy, and get smart personalized feedback — all in a beautiful minimal UI.
+<p align="center">
+  <a href="https://keyxpulse.vercel.app/">
+    <img src="./public/thumbnail.png" alt="KeyXPulse Preview" width="850"/>
+  </a>
+</p>
 
-![KeyXPulse Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![Vite](https://img.shields.io/badge/Vite-5.x-646CFF) ![React](https://img.shields.io/badge/React-18-61DAFB)
+<p align="center">
+  <b>A modern AI-assisted typing coach that analyzes your performance and helps you improve.</b><br/>
+  Track your WPM, accuracy, and receive intelligent feedback — all in a clean, minimal UI.
+</p>
+
+<p align="center">
+  <a href="https://keyxpulse.vercel.app/">🌐 Live Demo</a> •
+  <a href="https://github.com/KarthikeshwarAnanthapur/KeyXPulse">💻 GitHub</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Live-brightgreen"/>
+  <img src="https://img.shields.io/badge/Vite-5.x-646CFF"/>
+  <img src="https://img.shields.io/badge/React-18-61DAFB"/>
+</p>
+
+---
+
+## 🚀 Overview
+
+Most typing apps only measure speed.
+
+**KeyXPulse goes further** — it analyzes how you type and provides actionable insights to help you improve over time.
 
 ---
 
 ## 🌟 Features
 
 | Feature | Description |
-|---|---|
-| ⏱ **Time Control** | Choose from 10s, 20s, 30s, 1 min, or 5 min sessions |
-| ⌨️ **Live Typing** | Real-time char-by-char color feedback (green ✓ / red ✗) |
-| 🚫 **No Backspace** | Deletions disabled — forces deliberate, intentional typing |
-| 📊 **Live Stats** | WPM, Accuracy, and Error count update every second |
-| 🧠 **AI Coach** | Personalized feedback message after every session |
-| 🔑 **Weak Key Detection** | Tracks your most-missed characters and surfaces them as key chips |
-| 🔮 **WPM Prediction** | Linear regression over last 3 sessions predicts your next WPM |
-| 📈 **Progress Graphs** | Chart.js line charts for WPM & accuracy trends |
-| 💾 **Session History** | All sessions stored in localStorage, viewable in History tab |
-| ⏰ **Ring Timer** | Animated SVG ring timer that turns red in the last 10 seconds |
-| 📱 **Fully Responsive** | Works beautifully on mobile, tablet, and desktop |
+|--------|------------|
+| ⏱ **Time Control** | Choose from 10s → 5min typing sessions |
+| ⌨️ **Live Typing Feedback** | Real-time character validation (✔ / ✖) |
+| 🚫 **No Backspace Mode** | Forces intentional and accurate typing |
+| 📊 **Live Metrics** | WPM, Accuracy & Errors updated instantly |
+| 🧠 **AI Coach Feedback** | Personalized insights after each session |
+| 🔑 **Weak Key Detection** | Identifies frequently mistyped characters |
+| 🔮 **WPM Prediction** | Predicts your next performance using recent sessions |
+| 📈 **Progress Analytics** | Interactive charts for WPM & accuracy trends |
+| 💾 **Session History** | Stores and tracks progress using localStorage |
+| ⏰ **Visual Timer** | Animated SVG ring timer with urgency feedback |
+| 📱 **Responsive Design** | Seamless experience across all devices |
 
 ---
 
 ## 🎨 Tech Stack
 
 | Layer | Technology |
-|---|---|
-| **Framework** | React 18 |
+|------|-----------|
+| **Frontend** | React 18 |
 | **Build Tool** | Vite 5 |
-| **Charts** | Chart.js 4 + react-chartjs-2 |
-| **Styling** | Pure CSS with custom properties |
-| **Fonts** | Inter + DM Mono (Google Fonts) |
-| **Persistence** | localStorage |
-| **Deployment** | Vercel (static) |
+| **Charts** | Chart.js + react-chartjs-2 |
+| **Styling** | Custom CSS (minimal + aesthetic UI) |
+| **State & Logic** | React Hooks |
+| **Storage** | localStorage |
+| **Deployment** | Vercel |
 
 ---
 
-## 🗂 File Structure
-
+## 🗂 Project Structure
 ```
 KeyXPulse/
 ├── index.html
@@ -73,34 +97,36 @@ KeyXPulse/
 
 ## 🎯 How to Use
 
-1. **Select** a time duration from the dropdown
-2. **Press Start** (or hit `Enter`)
-3. **Type** the displayed words in the input field
-4. Timer starts automatically on your **first keystroke**
-5. **Results + AI feedback** appear when time runs out
-6. Check the **History** tab for your progress over time
+1. Select a typing duration  
+2. Click **Start** (or press `Enter`)  
+3. Begin typing — timer starts automatically  
+4. View your results and AI feedback  
+5. Track your progress in the **History** tab  
 
-### Keyboard Shortcuts
+---
+
+## ⌨️ Keyboard Shortcuts
+
 | Key | Action |
 |-----|--------|
-| `Enter` | Start test (from idle state) |
-| `Escape` | Reset / cancel active test |
-| `Backspace` | Blocked during test (by design) |
+| `Enter` | Start test |
+| `Escape` | Reset test |
+| `Backspace` | Disabled (challenge mode) |
 
 ---
 
-## 🧠 AI Logic
+## 🧠 AI System
 
-- **Smart Suggestions** — Rule-based feedback tailored to your WPM + accuracy combo
-- **Weak Key Detection** — Tracks every mismatch and surfaces top 5 most-missed keys
-- **WPM Prediction** — Linear regression over your last 3 sessions + current to predict next WPM
-
----
-
-## 📄 License
-
-MIT — free to use, modify, and share.
+- **Smart Feedback** → Suggests improvements based on accuracy & speed  
+- **Weak Key Detection** → Tracks most frequent typing mistakes  
+- **Performance Prediction** → Estimates your next WPM using recent data  
 
 ---
 
-*Made with 💖 · KeyXPulse © 2026*
+## 🚀 Getting Started (Local Setup)
+
+```bash
+git clone https://github.com/KarthikeshwarAnanthapur/KeyXPulse.git
+cd KeyXPulse
+npm install
+npm run dev
